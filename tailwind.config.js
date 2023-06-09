@@ -2,7 +2,12 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {}
+    extend: {
+      translate: {
+        '1/2': '50%',
+        'full': '100%',
+      }
+    }
   },
   plugins: [
     require('@tailwindcss/typography'),
